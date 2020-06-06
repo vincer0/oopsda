@@ -1,5 +1,6 @@
 package com.advanced;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -64,6 +65,7 @@ public class Main {
          * Zadania Point2D
          *
          */
+        System.out.println("Zadanie Point2D");
         Point2D point2d = new Point2D();
         System.out.println(Arrays.toString(point2d.getXY()));
         System.out.println(String.format("%s", point2d.toString()));
@@ -72,6 +74,23 @@ public class Main {
         System.out.println(Arrays.toString(aPoint2d.getXY()));
         System.out.println(String.format("%s", aPoint2d.toString()));
 
+        /**
+         * Zadanie Point3D
+         */
+        System.out.println("Zadanie Point3D");
+        Point3D point3D = new Point3D(3.12f, 4.56f, 7.6f);
+        System.out.println(Arrays.toString(point3D.getXYZ()));
+        System.out.println(String.format("X: %.2f, Y: %.2f, Z: %.2f", point3D.getX(), point3D.getY(), point3D.getZ()));
+        System.out.println(String.format("%s", point3D.toString()));
+        point3D.setXY(3f, 0.21f);
+        System.out.println(point3D.toString());
+        point3D.setXYZ(12.21f, 9.57f, 7.54f);
+        System.out.println(point3D.toString());
+
+        /**
+         * Zadanie Shape
+         */
+        System.out.println("Zadanie Shape");
 
     }
 }
