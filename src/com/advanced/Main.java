@@ -75,6 +75,7 @@ public class Main {
         Point2D aPoint2d = new Point2D(2.23f, 3.34f);
         System.out.println(Arrays.toString(aPoint2d.getXY()));
         System.out.println(aPoint2d.toString());
+        System.out.println();
 
         /**
          * Zadanie Point3D
@@ -88,6 +89,7 @@ public class Main {
         System.out.println(point3D.toString());
         point3D.setXYZ(12.21f, 9.57f, 7.54f);
         System.out.println(point3D.toString());
+        System.out.println();
 
         /**
          * Zadanie Shape
@@ -98,6 +100,7 @@ public class Main {
 
         Shape shape = new Shape("Red" , true);
         System.out.println(shape.toString());
+        System.out.println();
 
         /**
          * Zadanie Circle
@@ -125,6 +128,16 @@ public class Main {
         System.out.println(String.format("Perimeter of rectangle: %.2f", rectangle.getPerimeter()));
         System.out.println();
 
-
+        /**
+         * Zadanie Line
+         */
+        System.out.println("Zadanie Line");
+        Point2D p1 = new Point2D(0,0);
+        Point2D p2 = new Point2D(2,2);
+        Line line = new Line(p1, p2);
+        double lengthOfLine = line.getLength();
+        System.out.println("Length of line: " + lengthOfLine);
+        Point2D middlePoint = line.getMiddlePoint();
+        System.out.println(String.format("Middle point of line: %s", middlePoint.toString()));
     }
 }
