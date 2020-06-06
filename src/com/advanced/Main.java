@@ -68,11 +68,11 @@ public class Main {
         System.out.println("Zadanie Point2D");
         Point2D point2d = new Point2D();
         System.out.println(Arrays.toString(point2d.getXY()));
-        System.out.println(String.format("%s", point2d.toString()));
+        System.out.println(point2d.toString());
 
         Point2D aPoint2d = new Point2D(2.23f, 3.34f);
         System.out.println(Arrays.toString(aPoint2d.getXY()));
-        System.out.println(String.format("%s", aPoint2d.toString()));
+        System.out.println(aPoint2d.toString());
 
         /**
          * Zadanie Point3D
@@ -81,7 +81,7 @@ public class Main {
         Point3D point3D = new Point3D(3.12f, 4.56f, 7.6f);
         System.out.println(Arrays.toString(point3D.getXYZ()));
         System.out.println(String.format("X: %.2f, Y: %.2f, Z: %.2f", point3D.getX(), point3D.getY(), point3D.getZ()));
-        System.out.println(String.format("%s", point3D.toString()));
+        System.out.println(point3D.toString());
         point3D.setXY(3f, 0.21f);
         System.out.println(point3D.toString());
         point3D.setXYZ(12.21f, 9.57f, 7.54f);
@@ -92,10 +92,20 @@ public class Main {
          */
         System.out.println("Zadanie Shape");
         Shape dummyShape = new Shape();
-        System.out.println(String.format("%s", dummyShape.toString()));
+        System.out.println(dummyShape.toString());
 
         Shape shape = new Shape("Red" , true);
-        System.out.println(String.format("%s", shape.toString()));
+        System.out.println(shape.toString());
+
+        /**
+         * Zadanie Circle
+         */
+        System.out.println("Zadanie Circle");
+        Circle dummyCircle = new Circle();
+        System.out.println(dummyCircle.toString());
+
+        Circle circle = new Circle("Blue", true, 3.51f);
+        System.out.println(circle.toString());
 
     }
 }
