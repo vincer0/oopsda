@@ -25,4 +25,14 @@ public class MoviesList {
         }
         return searchResults;
     }
+
+    public void searchByPhrase(String phrase) {
+        System.out.println("Szukam po frazie: " + phrase);
+        for (Movie movie : moviesList) {
+            if (movie.title.equals(phrase) || movie.director.equals(phrase) ||
+                    movie.genre.equals(phrase)) {
+                movie.displayMovie();
+            }
+        }
+    }
 }

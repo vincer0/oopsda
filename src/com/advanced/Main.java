@@ -49,5 +49,8 @@ public class Main {
         System.out.println("Odnaleziono filmy:");
         System.out.println(results.toString());
 
+        moviesList.searchByPhrase("Crime");
+        moviesList.searchByPhrase("Frank Darabont");
+
     }
 }
