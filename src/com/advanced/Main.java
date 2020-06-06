@@ -1,5 +1,7 @@
 package com.advanced;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -104,8 +106,25 @@ public class Main {
         Circle dummyCircle = new Circle();
         System.out.println(dummyCircle.toString());
 
-        Circle circle = new Circle("Blue", true, 3.51f);
+        Circle circle = new Circle("Blue", true, 2.0f);
         System.out.println(circle.toString());
+        System.out.println(String.format("Area of circle: %.2f", circle.getArea()));
+        System.out.println(String.format("Perimeter of circle: %.2f", circle.getPerimeter()));
+        System.out.println();
+
+        /**
+         * Zadanie Rectangle
+         */
+        System.out.println("Zadanie Rectangle");
+        Rectangle dummyRectangle = new Rectangle();
+        System.out.println(dummyRectangle.toString());
+
+        Rectangle rectangle = new Rectangle("Yellow", true, 2.0f, 4.0f);
+        System.out.println(rectangle.toString());
+        System.out.println(String.format("Area of rectangle: %.2f", rectangle.getArea()));
+        System.out.println(String.format("Perimeter of rectangle: %.2f", rectangle.getPerimeter()));
+        System.out.println();
+
 
     }
 }
