@@ -91,6 +91,11 @@ public class Main {
          * Zadanie Shape
          */
         System.out.println("Zadanie Shape");
+        Shape dummyShape = new Shape();
+        System.out.println(String.format("%s", dummyShape.toString()));
+
+        Shape shape = new Shape("Red" , true);
+        System.out.println(String.format("%s", shape.toString()));
 
     }
 }
