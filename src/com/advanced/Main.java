@@ -1,11 +1,16 @@
 package com.advanced;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Zadanie 1.");
+
+        /**
+         * Zadanie 1
+         */
+        /*System.out.println("Zadanie 1.");
 
         Movie fnf = new Movie("Fast and Furious", "Some Director", "Action", 2000, 5, 17);
         Movie constantine = new Movie("Constantine", "Some Other Director", "Action", 1999, 1, 90);
@@ -24,6 +29,9 @@ public class Main {
         boolean isFnfEqualtoFndButSame = fnf.equals(fnfButSame);
         System.out.println(isFnfEqualtoFndButSame);
 
+        *//**
+         * Zadanie 2
+         *//*
         System.out.println("Zadanie 2: CSV...");
 
         MoviesList moviesList = new MoviesList();
@@ -50,7 +58,20 @@ public class Main {
         System.out.println(results.toString());
 
         moviesList.searchByPhrase("Crime");
-        moviesList.searchByPhrase("Frank Darabont");
+        moviesList.searchByPhrase("Frank Darabont");*/
+
+        /**
+         * Zadania Point2D
+         *
+         */
+        Point2D point2d = new Point2D();
+        System.out.println(Arrays.toString(point2d.getXY()));
+        System.out.println(String.format("%s", point2d.toString()));
+
+        Point2D aPoint2d = new Point2D(2.23f, 3.34f);
+        System.out.println(Arrays.toString(aPoint2d.getXY()));
+        System.out.println(String.format("%s", aPoint2d.toString()));
+
 
     }
 }
