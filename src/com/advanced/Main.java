@@ -136,5 +136,14 @@ public class Main {
         System.out.println("Length of line: " + lengthOfLine);
         Point2D middlePoint = line.getMiddlePoint();
         System.out.println(String.format("Middle point of line: %s", middlePoint.toString()));
+        System.out.println();
+
+        /**
+         * Zadanie Square
+         */
+        System.out.println("Zadanie Square");
+        Square square = new Square("White", true, 5);
+        System.out.println(square.toString());
+        System.out.println();
     }
 }
