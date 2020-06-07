@@ -1,8 +1,5 @@
 package com.advanced;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
